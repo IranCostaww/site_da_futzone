@@ -38,18 +38,14 @@ function criarModalCheckout(){
     modal.innerHTML = `
         <div class="caixa">
             <h3>Finalizar compra</h3>
-            <div id="passo-cep">
-                <input type="text" id="input-cep" placeholder="Digite seu CEP" maxlength="9">
-                <button id="btn-calcular-frete">Calcular frete</button>
-            </div>
-            <div id="passo-resumo" style="display:none">
-                <div class="resumo" id="texto-resumo"></div>
-                <input type="text" id="input-nome" placeholder="Seu nome completo">
-                <input type="text" id="input-rua" placeholder="Rua/Avenida e número">
-                <input type="text" id="input-complemento" placeholder="Complemento (opcional)">
-                <input type="text" id="input-bairro" placeholder="Bairro">
-                <button id="btn-pagar">Finalizar no WhatsApp</button>
-            </div>
+            <div class="resumo" id="texto-resumo"></div>
+            <input type="text" id="input-nome" placeholder="Seu nome completo">
+            <input type="text" id="input-cep" placeholder="CEP">
+            <input type="text" id="input-rua" placeholder="Rua/Avenida e número">
+            <input type="text" id="input-complemento" placeholder="Complemento (opcional)">
+            <input type="text" id="input-bairro" placeholder="Bairro">
+            <input type="text" id="input-cidade" placeholder="Cidade/UF">
+            <button id="btn-pagar">Finalizar no WhatsApp</button>
             <div class="erro" id="texto-erro"></div>
             <button class="cancelar" id="btn-cancelar">Cancelar</button>
         </div>
@@ -68,88 +64,45 @@ function comprar(nomeCamisa, preco){
 
     criarModalCheckout();
 
-    const inputCep = document.getElementById("input-cep");
-    const btnCalcular = document.getElementById("btn-calcular-frete");
     const btnPagar = document.getElementById("btn-pagar");
     const btnCancelar = document.getElementById("btn-cancelar");
-    const passoCep = document.getElementById("passo-cep");
-    const passoResumo = document.getElementById("passo-resumo");
     const textoResumo = document.getElementById("texto-resumo");
     const textoErro = document.getElementById("texto-erro");
     const inputNome = document.getElementById("input-nome");
+    const inputCep = document.getElementById("input-cep");
     const inputRua = document.getElementById("input-rua");
     const inputComplemento = document.getElementById("input-complemento");
     const inputBairro = document.getElementById("input-bairro");
+    const inputCidade = document.getElementById("input-cidade");
 
-    let freteCalculado = null;
+    textoResumo.innerHTML = `
+        Produto: ${nomeCamisa}<br>
+        <strong>Total: R$ ${preco.toFixed(2).replace(".", ",")}</strong>
+    `;
 
     btnCancelar.onclick = fecharModalCheckout;
 
-    btnCalcular.onclick = async () => {
-        textoErro.textContent = "";
-        const cep = inputCep.value.trim();
-
-        if (!cep) {
-            textoErro.textContent = "Digite um CEP.";
-            return;
-        }
-
-        btnCalcular.textContent = "Calculando...";
-        btnCalcular.disabled = true;
-
-        try {
-            const resposta = await fetch(
-                `${API_URL}/api/calcular-frete?cep=${encodeURIComponent(cep)}`
-            );
-            const frete = await resposta.json();
-
-            if (frete.erro) {
-                textoErro.textContent = frete.erro;
-                return;
-            }
-
-            freteCalculado = frete;
-            const total = preco + frete.valor_frete;
-
-            textoResumo.innerHTML = `
-                Produto: ${nomeCamisa}<br>
-                Frete para ${frete.cidade}/${frete.uf}: R$ ${frete.valor_frete.toFixed(2).replace(".", ",")}<br>
-                <strong>Total: R$ ${total.toFixed(2).replace(".", ",")}</strong>
-            `;
-
-            passoCep.style.display = "none";
-            passoResumo.style.display = "block";
-
-        } catch (erro) {
-            textoErro.textContent = "Erro ao consultar o CEP. Tente novamente.";
-        } finally {
-            btnCalcular.textContent = "Calcular frete";
-            btnCalcular.disabled = false;
-        }
-    };
-
     btnPagar.onclick = () => {
-        if (!freteCalculado) return;
+        textoErro.textContent = "";
 
         const nome = inputNome.value.trim();
+        const cep = inputCep.value.trim();
         const rua = inputRua.value.trim();
         const complemento = inputComplemento.value.trim();
         const bairro = inputBairro.value.trim();
+        const cidade = inputCidade.value.trim();
 
         if (!nome || !rua || !bairro) {
             textoErro.textContent = "Preencha nome, endereço e bairro.";
             return;
         }
 
-        const total = preco + freteCalculado.valor_frete;
-
         const mensagem =
             `Olá! Quero comprar a camisa ${nomeCamisa}.\n` +
             `Nome: ${nome}\n` +
-            `Endereço: ${rua}${complemento ? ", " + complemento : ""} - ${bairro}\n` +
-            `CEP: ${freteCalculado.cep} (${freteCalculado.cidade}/${freteCalculado.uf})\n` +
-            `Frete: R$ ${freteCalculado.valor_frete.toFixed(2).replace(".", ",")}\n` +
-            `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+            `Endereço: ${rua}${complemento ? ", " + complemento : ""} - ${bairro}${cidade ? " - " + cidade : ""}\n` +
+            (cep ? `CEP: ${cep}\n` : "") +
+            `Total: R$ ${preco.toFixed(2).replace(".", ",")}`;
 
         const linkWhats = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(mensagem)}`;
         window.open(linkWhats, "_blank");
