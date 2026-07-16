@@ -80,8 +80,8 @@ body{
 }
 
 #navbar a {
-    color: #d4af37; /* dourado */
-    text-decoration: none; /* remove o sublinhado */
+    color: #d4af37; 
+    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
 }
@@ -135,7 +135,7 @@ body{
 
 #hero p{
     color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra um pouco menor para o texto pequeno */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
  /*#hero button{
     background-image: url("/imagens/butao.png");
@@ -585,20 +585,18 @@ PÁGINA PRODUTOS
         font-size: 13px;
     }
 
-    /* ==========================================
-       HERO (NEYMAR - Texto abaixo do pescoço, na camisa!)
-    ========================================== */
+    /* HERO DO NEY*/
     #hero {
         height: 65vh; 
-        padding: 20px 20px 60px 20px; /* Mais espaço embaixo para empurrar o botão */
-        background-position: 70% top; /* Foca no topo da cabeça dele para subir a camisa */
+        padding: 20px 20px 60px 20px; 
+        background-position: 70% top; 
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* Empurra todo o texto para a parte de baixo da foto */
+        justify-content: flex-end; 
     }
 
     #hero h4, #hero h1, #hero h2, #hero p {
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra para destacar em cima da camisa amarela */
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
     }
 
     #hero h4 {
@@ -630,9 +628,7 @@ PÁGINA PRODUTOS
         font-size: 16px;
     }
 
-    /* ==========================================
-       PRODUTOS LADO A LADO NO CELULAR
-    ========================================== */
+
     .catalogo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -643,14 +639,14 @@ PÁGINA PRODUTOS
         padding: 12px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Espalha os itens dentro do card */
-        height: 100%; /* Faz os cards da mesma linha terem a mesma altura */
+        justify-content: space-between; 
+        height: 100%; 
     }
 
     .produto img {
         width: 100%;
-        height: 140px; /* Altura um pouco maior para dar respiro */
-        object-fit: contain; /* Garante que a camisa apareça inteira sem achatar */
+        height: 140px; 
+        object-fit: contain; 
         margin-bottom: 10px;
     }
 
@@ -658,22 +654,20 @@ PÁGINA PRODUTOS
         font-size: 14px; 
         margin-top: 5px;
         margin-bottom: 10px;
-        flex-grow: 1; /* O pulo do gato: o título ocupa o espaço que sobrar e empurra o preço pra baixo */
+        flex-grow: 1; 
     }
 
     .produto p {
-        font-size: 16px; /* Tamanho ligeiramente reduzido para não encavalar em 2 colunas */
+        font-size: 16px; 
         margin: 5px 0 15px 0;
     }
 
     .produto button {
-        width: 100%; /* Deixa o botão ocupando a largura total do card, fica mais fácil de clicar */
+        width: 100%; 
         padding: 10px;
         font-size: 14px;
     }
-    /* ==========================================
-       FOOTER (RODAPÉ)
-    ========================================== */
+   
     #footer {
         padding: 30px 20px 15px;
     }
@@ -685,14 +679,12 @@ PÁGINA PRODUTOS
     }
 }
 
-/* =====================================
-   CELULARES PEQUENOS
-===================================== */
+
 
 @media (max-width: 480px) {
 
     .camisa span, .produto p {
-        font-size: 20px; /* Reduz um pouco o tamanho do preço no celular */
+        font-size: 20px; 
         margin: 10px 0;
     }
 
@@ -704,7 +696,7 @@ PÁGINA PRODUTOS
         padding: 10px 15px;
     }
 
-    /* Mantenha o menu horizontal e em linha */
+   
     #navbar {
         display: flex;
         flex-direction: row;
@@ -712,7 +704,7 @@ PÁGINA PRODUTOS
     }
 
     h1 {
-        font-size: 24px; /* Ajuste para não quebrar em telas minúsculas */
+        font-size: 24px;
     }
 
     h2 {

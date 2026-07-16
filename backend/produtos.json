@@ -20,7 +20,7 @@
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/corinthias.jpg",
-    "estoque": false,
+    "estoque": true,
     "id": 3
   },
   {
