@@ -62,7 +62,7 @@ function fecharModalCheckout(){
     if (modal) modal.remove();
 }
 
-const NUMERO_WHATSAPP = "5573988625840";
+const NUMERO_WHATSAPP = "557398625840";
 
 function comprar(nomeCamisa, preco){
 
