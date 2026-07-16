@@ -1132,6 +1132,131 @@ PÁGINA PRODUTOS
 }
 
 /* ==========================================
+            PÁGINA SOBRE NÓS
+========================================== */
+
+#sobre-hero{
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,.85),
+            rgba(0,0,0,.6)
+        ),
+        url("imagens/futzone2.png");
+    background-size: cover;
+    background-position: center;
+
+    padding: 90px 80px;
+    text-align: center;
+
+}
+
+#sobre-hero h4{
+
+    color: #d4af37;
+    padding-bottom: 10px;
+
+}
+
+#sobre-hero h1{
+
+    color: #f7d046;
+
+}
+
+#sobre-conteudo{
+
+    padding: 60px 80px;
+    background: #fafafa;
+
+}
+
+.sobre-caixa{
+
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+
+}
+
+.sobre-caixa p{
+
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+
+}
+
+.sobre-destaques{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+
+}
+
+.destaque-item{
+
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+
+}
+
+.destaque-item:hover{
+
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.destaque-item i{
+
+    font-size: 34px;
+    color: #d4af37;
+    margin-bottom: 15px;
+
+}
+
+.destaque-item h4{
+
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+.destaque-item p{
+
+    font-size: 14px;
+    margin: 0;
+
+}
+
+@media (max-width: 768px){
+
+    #sobre-hero{
+        padding: 50px 25px;
+    }
+
+    #sobre-hero h1{
+        font-size: 28px;
+    }
+
+    #sobre-conteudo{
+        padding: 40px 25px;
+    }
+
+    .sobre-caixa p{
+        font-size: 16px;
+    }
+
+}
+
+/* ==========================================
    CORREÇÃO: PÁGINA PRINCIPAL NO CELULAR
    O menu tinha muito espaço em branco entre
    os itens (herdado do layout de tela cheia)
