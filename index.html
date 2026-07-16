@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Futzone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://pro.fontawesome.com/release/v5.10.00/css/all.css"/>
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+                    CABEÇALHO
+    =========================================== -->
+
+    <section id="header">
+
+        <a href="index.html">
+
+            <img src="imagens/futzone.webp" class="logo" alt="Logo Futzone">
+
+        </a>
+
+        <ul id="navbar">
+
+            <li class="active">
+
+                <a href="index.html">Home</a>
+
+            </li>
+
+            <li>
+
+                <a href="produtos.html">Produtos</a>
+
+            </li>
+
+            <li>
+
+                <a href="Sobre.html">Sobre nós</a>
+
+            </li>
+
+            <li>
+
+                <a href="Contato.html">Contato</a>
+
+            </li>
+
+            <li>
+
+                <a href="https://wa.me/5573988625840?text=Olá!%20Vi%20o%20site%20da%20Futzone%20e%20tenho%20interesse%20em%20uma%20camisa.">
+
+                    <img src="imagens/wpp.svg" class="logo_wpp">
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ==========================================
+                    HERO
+    =========================================== -->
+
+    <section id="hero">
+
+        <h4>Vista sua paixão</h4>
+
+        <h2>A camisa do seu time</h2>
+
+        <h1>está aqui</h1>
+
+        <p>Nacionais, internacionais e seleções.</p>
+
+        <button onclick="window.location.href='produtos.html'">
+
+            Ver Coleção
+
+        </button>
+
+    </section>
+
+    <!-- ==========================================
+                LANÇAMENTOS
+========================================== -->
+
+<section class="vitrine">
+
+    <div class="titulo-vitrine">
+
+        <h2>Lançamentos</h2>
+
+        <div class="setas">
+
+            <button class="anterior">&#10094;</button>
+
+            <button class="proximo">&#10095;</button>
+
+        </div>
+
+    </div>
+
+    <div class="carrossel">
+
+        <!--
+            O JavaScript irá colocar os produtos aqui.
+        -->
+        <div class="lista-produtos" id="lancamentos">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+                MAIS VENDIDOS
+========================================== -->
+
+<section class="vitrine">
+
+    <div class="titulo-vitrine">
+
+        <h2>Mais Vendidos</h2>
+
+        <div class="setas">
+
+            <button class="anterior">&#10094;</button>
+
+            <button class="proximo">&#10095;</button>
+
+        </div>
+
+    </div>
+
+    <div class="carrossel">
+
+        <!--
+            O JavaScript irá colocar os produtos aqui.
+        -->
+        <div class="lista-produtos" id="maisVendidos">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+                RODAPÉ
+========================================== -->
+
+<footer id="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-item">
+
+            <img src="imagens/futzone.webp"
+                 class="logo"
+                 alt="Logo Futzone">
+
+        </div>
+
+        <div class="footer-item">
+
+            <h4>Atendimento</h4>
+
+            <p>(73) 9862-5840</p>
+
+        </div>
+
+        <div class="footer-item">
+
+            <h4>Horário</h4>
+
+            <p>
+
+                Seg. à Sex.<br>
+                09:00 às 18:00
+
+            </p>
+
+        </div>
+
+        <div class="footer-item">
+
+            <h4>Instagram</h4>
+
+            <a href="https://instagram.com/futzonebr__" target="_blank">
+
+                <img src="imagens/insta.svg"
+                     class="logo_insta"
+                     alt="Instagram">
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        Desenvolvido por
+        <strong>@irancostaww</strong>
+
+    </p>
+
+</footer>
+
+
+
+<!-- Dados dos produtos -->
+<script src="config.js"></script>
+<script src="dados.js"></script>
+
+<!-- JavaScript da Home -->
+<script src="script.js"></script>
+
+</body>
+
+</html>

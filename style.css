@@ -1,0 +1,1208 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+/* navbar*/
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color:black;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:black;
+}
+h4{
+    font-size:20px;
+    color: black;  
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size:16px;
+    color:gray;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width:100%;
+}
+
+.logo{
+    width:100px;
+    height: auto;
+}
+
+.logo_wpp{
+    width:40px;
+    height: auto;
+}
+
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background:rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+    position: sticky;
+    z-index:999;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar a {
+    color: #d4af37; /* dourado */
+    text-decoration: none; /* remove o sublinhado */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#navbar a:hover,#navbar li.active a {
+    color: #f7d046;
+}
+#navbar li.active::after, #navbar a:hover::after{
+      content: "";
+      width:30%;
+      height:2px;
+      background: #f7d046;
+      position: absolute;
+      bottom: -4px;
+      left: 20px;
+}
+ /* pagina inicial*/
+ #hero{
+      background-image:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.05)
+        ),
+        url("imagens/neymar.jpg");
+    height: 90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+ }
+#hero h4{
+    padding-bottom: 15px;
+    color: #d4af37; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#hero h1{
+    color: #f7d046; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#hero h2{
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#hero p{
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Sombra um pouco menor para o texto pequeno */
+}
+ /*#hero button{
+    background-image: url("/imagens/butao.png");
+    background-color: transparent;
+     color: #f7d046; 
+     border: 0;
+     padding: 14px 80px 14px 65px;
+ }*/
+ #hero button{
+    transition: .3s;
+    width: 300px;
+    height: 150px;
+
+    background: url("imagens/butao.png") no-repeat center;
+    background-size: 100% 100%;
+
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#hero button:hover{
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+}
+
+/*======================
+PÁGINA PRODUTOS
+=======================*/
+
+#loja{
+
+    display:flex;
+    padding:60px 80px;
+    gap:50px;
+    background:#fafafa;
+
+}
+
+/* FILTROS */
+
+.filtros{
+
+    width:260px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    height:fit-content;
+
+}
+
+.grupo{
+
+    margin-top:30px;
+
+}
+
+.grupo h3{
+
+    margin-bottom:15px;
+    font-size:18px;
+
+}
+
+.grupo label{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    cursor:pointer;
+
+}
+
+/* CONTEÚDO */
+
+.conteudo{
+
+    flex:1;
+
+}
+
+.topo-produtos{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+
+}
+
+.topo-produtos select{
+
+    padding:10px 15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* GRID */
+
+.catalogo{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:30px;
+
+}
+
+/* CARD */
+
+.camisa{
+
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    transition:.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.camisa:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.imagem{
+
+    height:240px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.imagem img{
+
+    width:100%;
+    transition:.4s;
+
+}
+
+.camisa:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.camisa h4{
+
+    margin-top:15px;
+    font-size:17px;
+    height:45px;
+
+}
+
+.camisa span{
+
+    display:block;
+    color:#d4af37;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+
+}
+
+.camisa button{
+
+    width:100%;
+    padding:14px;
+    background:black;
+    color:#d4af37;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.camisa button:hover{
+
+    background:#d4af37;
+    color:black;
+
+}/* ==========================
+   PÁGINA DE PRODUTOS
+========================== */
+
+#loja{
+    display: flex;
+    gap: 40px;
+    padding: 40px 80px;
+    background: #f5f5f5;
+}
+
+/* ==========================
+   FILTROS
+========================== */
+
+.filtros{
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.filtros h2{
+    margin-bottom: 20px;
+}
+
+.grupo{
+    margin-bottom: 30px;
+}
+
+.grupo h3{
+    margin-bottom: 15px;
+}
+
+.grupo label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+.conteudo{
+    flex: 1;
+}
+
+/* Barra superior */
+
+.topo-produtos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topo-produtos select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ==========================
+   CATÁLOGO
+========================== */
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    gap: 25px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.camisa{
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.camisa:hover{
+    transform: translateY(-8px);
+}
+
+.imagem{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+}
+
+.camisa h4{
+    margin-top: 15px;
+    font-size: 17px;
+    min-height: 45px;
+}
+
+.camisa span{
+    display: block;
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.camisa button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: #d4af37;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.camisa button:hover{
+    background: #d4af37;
+    color: black;
+}
+#pesquisa{
+
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+
+}
+
+#preco{
+
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+
+}
+
+#limpar{
+
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+
+    background:black;
+    color:#d4af37;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#limpar:hover{
+
+    background:#d4af37;
+    color:black;
+
+
+}
+/* =====================================
+   TABLETS (até 992px)
+===================================== */
+
+@media (max-width: 992px){
+
+    #header{
+
+        padding:15px 30px;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    #navbar{
+
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    #loja{
+
+        flex-direction:column;
+        padding:30px;
+
+    }
+
+    .filtros{
+
+        width:100%;
+
+    }
+
+    .topo-produtos{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+
+    }
+
+}
+
+/* =====================================
+   CELULARES (até 768px)
+===================================== */
+
+@media (max-width: 768px) {
+    /* ==========================================
+       HEADER E NAVBAR (Contato ajustado sem quebrar)
+    ========================================== */
+    #header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    #navbar {
+        order: 3; /* Força o menu a ficar na linha de baixo de forma organizada */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    #navbar a {
+        font-size: 13px;
+    }
+
+    /* ==========================================
+       HERO (NEYMAR - Texto abaixo do pescoço, na camisa!)
+    ========================================== */
+    #hero {
+        height: 65vh; 
+        padding: 20px 20px 60px 20px; /* Mais espaço embaixo para empurrar o botão */
+        background-position: 70% top; /* Foca no topo da cabeça dele para subir a camisa */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Empurra todo o texto para a parte de baixo da foto */
+    }
+
+    #hero h4, #hero h1, #hero h2, #hero p {
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra para destacar em cima da camisa amarela */
+    }
+
+    #hero h4 {
+        font-size: 16px;
+        padding-bottom: 5px; 
+    }
+
+    #hero h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    #hero p {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+        color: #f5f5f5; 
+    }
+
+    #hero button {
+        width: 180px;
+        height: 65px; 
+        font-size: 16px;
+    }
+
+    /* ==========================================
+       PRODUTOS LADO A LADO NO CELULAR
+    ========================================== */
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .produto {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Espalha os itens dentro do card */
+        height: 100%; /* Faz os cards da mesma linha terem a mesma altura */
+    }
+
+    .produto img {
+        width: 100%;
+        height: 140px; /* Altura um pouco maior para dar respiro */
+        object-fit: contain; /* Garante que a camisa apareça inteira sem achatar */
+        margin-bottom: 10px;
+    }
+
+    .produto h4 {
+        font-size: 14px; 
+        margin-top: 5px;
+        margin-bottom: 10px;
+        flex-grow: 1; /* O pulo do gato: o título ocupa o espaço que sobrar e empurra o preço pra baixo */
+    }
+
+    .produto p {
+        font-size: 16px; /* Tamanho ligeiramente reduzido para não encavalar em 2 colunas */
+        margin: 5px 0 15px 0;
+    }
+
+    .produto button {
+        width: 100%; /* Deixa o botão ocupando a largura total do card, fica mais fácil de clicar */
+        padding: 10px;
+        font-size: 14px;
+    }
+    /* ==========================================
+       FOOTER (RODAPÉ)
+    ========================================== */
+    #footer {
+        padding: 30px 20px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+/* =====================================
+   CELULARES PEQUENOS
+===================================== */
+
+@media (max-width: 480px) {
+
+    .camisa span, .produto p {
+        font-size: 20px; /* Reduz um pouco o tamanho do preço no celular */
+        margin: 10px 0;
+    }
+
+    .camisa button, .produto button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    #header {
+        padding: 10px 15px;
+    }
+
+    /* Mantenha o menu horizontal e em linha */
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 24px; /* Ajuste para não quebrar em telas minúsculas */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+/* ==========================================
+            VITRINES
+========================================== */
+
+.vitrine{
+
+    padding:60px 80px;
+    background:#f8f8f8;
+
+}
+
+.titulo-vitrine{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.titulo-vitrine h2{
+
+    font-size:32px;
+
+    color:#000;
+
+}
+
+/* ==========================================
+                SETAS
+========================================== */
+
+.setas{
+
+    display:flex;
+    gap:10px;
+
+}
+
+.setas button{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:black;
+
+    color:#d4af37;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.setas button:hover{
+
+    background:#d4af37;
+
+    color:black;
+
+}
+
+/* ==========================================
+            CARROSSEL
+========================================== */
+
+.carrossel{
+
+    overflow:hidden;
+
+}
+
+.lista-produtos{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+}
+
+.lista-produtos::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+/* ==========================================
+                CARD
+========================================== */
+
+.produto{
+
+    min-width:260px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    flex-shrink:0;
+
+}
+
+.produto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.produto img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.produto:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.produto h4{
+
+    margin-top:20px;
+
+    min-height:55px;
+
+    font-size:18px;
+
+}
+
+.produto p{
+
+    color:#d4af37;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+
+}
+
+.produto button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:black;
+
+    color:#d4af37;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.produto button:hover{
+
+    background:#d4af37;
+
+    color:black;
+
+}
+
+/* ==========================================
+        RESPONSIVO
+========================================== */
+
+@media(max-width:768px){
+
+    .vitrine{
+
+        padding:30px 20px;
+
+    }
+
+    .titulo-vitrine h2{
+
+        font-size:24px;
+
+    }
+
+    .produto{
+
+        min-width:200px;
+
+    }
+
+    .produto img{
+
+        height:180px;
+
+    }
+
+}
+/* ==========================
+        FOOTER
+========================== */
+
+#footer{
+
+    background:#000;
+
+    color:white;
+
+    padding:20px 80px 10px;
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.footer-item{
+
+    text-align:center;
+
+}
+
+.footer-item h4{
+
+    color:#d4af37;
+
+    margin-bottom:8px;
+
+    font-size:18px;
+
+}
+
+.footer-item p{
+
+    margin:0;
+
+    color:#ddd;
+
+    font-size:14px;
+
+}
+
+.footer-item .logo{
+
+    width:90px;
+
+}
+
+.logo_insta{
+
+    width:35px;
+
+    transition:.3s;
+
+}
+
+.logo_insta:hover{
+
+    transform:scale(1.1);
+
+}
+
+#footer hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#333;
+
+    margin:20px 0 10px;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+.copyright strong{
+
+    color:#d4af37;
+
+}
+
+/* A imagem precisa ser relativa para posicionar o selo */
+.imagem{
+    position: relative;
+}
+
+/* Faixa de esgotado */
+.selo-esgotado{
+
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    background: #d60000;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    z-index: 10;
+}
+
+/* Botão esgotado */
+
+.esgotado{
+
+    background: #888;
+
+    color: white;
+
+    cursor: not-allowed;
+}
+
+.esgotado:hover{
+
+    background: #888;
+}
+/* ==========================================
+   CORREÇÃO: PÁGINA DE PRODUTOS NO CELULAR
+   (a classe .produto é usada tanto no
+   carrossel da Home quanto na grade de
+   Produtos, e as regras responsivas do
+   carrossel estavam "vazando" pra grade.
+   Aqui isolamos a grade de produtos.)
+========================================== */
+
+@media (max-width: 768px) {
+
+    #loja {
+        padding: 20px 15px;
+    }
+
+    .catalogo .produto {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .catalogo .produto img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .catalogo .produto {
+        padding: 10px;
+    }
+
+    .catalogo .produto img {
+        height: 110px;
+    }
+
+    .catalogo .produto h4 {
+        font-size: 13px;
+        min-height: 36px;
+        margin-top: 8px;
+    }
+
+    .catalogo .produto p {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+}
+
+/* ==========================================
+   CORREÇÃO: PÁGINA PRINCIPAL NO CELULAR
+   O menu tinha muito espaço em branco entre
+   os itens (herdado do layout de tela cheia)
+   e as setas do carrossel ficavam grandes
+   demais perto do título "Lançamentos".
+========================================== */
+
+html, body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+
+    #navbar li {
+        padding: 0 8px;
+    }
+
+    .titulo-vitrine {
+        padding: 0 5px;
+    }
+
+    .titulo-vitrine h2 {
+        font-size: 22px;
+    }
+
+    .setas button {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .carrossel {
+        margin: 0 -5px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #hero {
+        height: 75vh;
+    }
+
+    #hero h1, #hero h2 {
+        font-size: 26px;
+    }
+
+    #hero button {
+        width: 160px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}

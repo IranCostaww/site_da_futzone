@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Futzone</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================================
+            CABEÇALHO
+    ==================================== -->
+
+    <section id="header">
+
+        <!-- Logo -->
+        <a href="index.html">
+            <img src="imagens/futzone.webp" class="logo" alt="Logo Futzone">
+        </a>
+
+        <!-- Menu -->
+        <ul id="navbar">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li class="active">
+                <a href="#">Produtos</a>
+            </li>
+
+            <li>
+                <a href="Sobre.html">Sobre nós</a>
+            </li>
+
+            <li>
+                <a href="Contato.html">Contato</a>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ===================================
+            ÁREA DA LOJA
+    ==================================== -->
+
+    <section id="loja">
+
+
+        <!-- ===================================
+                FILTROS
+        ==================================== -->
+
+        <aside class="filtros">
+
+            <h2>Filtros</h2>
+
+
+            <!-- PESQUISA -->
+
+            <div class="grupo">
+
+                <h3>Pesquisar</h3>
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Digite o nome da camisa">
+
+            </div>
+
+
+            <!-- CATEGORIA -->
+
+            <div class="grupo">
+
+                <h3>Categoria</h3>
+
+                <label>
+
+                    <input
+                        class="filtro-categoria"
+                        type="checkbox"
+                        value="Nacional">
+
+                    Nacional
+
+                </label>
+
+                <label>
+
+                    <input
+                        class="filtro-categoria"
+                        type="checkbox"
+                        value="Internacional">
+
+                    Internacional
+
+                </label>
+
+                <label>
+
+                    <input
+                        class="filtro-categoria"
+                        type="checkbox"
+                        value="Seleção">
+
+                    Seleção
+
+                </label>
+
+            </div>
+
+
+
+            <!-- PREÇO -->
+
+            <div class="grupo">
+
+                <h3>Preço</h3>
+
+                <select id="preco">
+
+                    <option value="todos">
+
+                        Todos
+
+                    </option>
+
+                    <option value="250">
+
+                        Até R$250
+
+                    </option>
+
+                    <option value="280">
+
+                        Até R$280
+
+                    </option>
+
+                    <option value="300">
+
+                        Até R$300
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- LIMPAR -->
+
+            <button id="limpar">
+
+                Limpar filtros
+
+            </button>
+
+        </aside>
+
+
+
+
+        <!-- ===================================
+                CONTEÚDO
+        ==================================== -->
+
+        <main class="conteudo">
+
+
+            <!-- TOPO -->
+
+            <div class="topo-produtos">
+
+                <h2>Todas as Camisas</h2>
+
+
+                <select id="ordenar">
+
+                    <option value="recente">
+
+                        Mais recentes
+
+                    </option>
+
+                    <option value="menor">
+
+                        Menor preço
+
+                    </option>
+
+                    <option value="maior">
+
+                        Maior preço
+
+                    </option>
+
+                    <option value="az">
+
+                        A-Z
+
+                    </option>
+
+                    <option value="za">
+
+                        Z-A
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- CATÁLOGO -->
+
+            <div
+                class="catalogo"
+                id="catalogo">
+
+            </div>
+
+
+        </main>
+
+    </section>
+
+
+    <script src="config.js"></script>
+    <script src="dados.js"></script>
+<script src="produtos.js"></script>
+
+</body>
+</body>
+</html>

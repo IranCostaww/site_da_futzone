@@ -1,0 +1,242 @@
+[
+  {
+    "nome": "Flamengo 25/26  | Versão Jogador",
+    "preco": 180,
+    "categoria": "Nacional",
+    "imagem": "imagens/flamengo26_jogador.jpg",
+    "id": 1,
+    "estoque": true
+  },
+  {
+    "nome": "Flamengo 25/26  | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/flamengo26_torcedor.webp",
+    "id": 2,
+    "estoque": true
+  },
+  {
+    "nome": "Corinthians 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/corinthias.jpg",
+    "estoque": false,
+    "id": 3
+  },
+  {
+    "nome": "Palmeiras 26/27 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/palmeiras26.jpg",
+    "id": 4,
+    "estoque": true
+  },
+  {
+    "nome": "São Paulo 25/26 | Versão Jogador",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/sp25.webp",
+    "estoque": false,
+    "id": 5
+  },
+  {
+    "nome": "Vasco 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/vasco26.jpg",
+    "id": 6,
+    "estoque": true
+  },
+  {
+    "nome": "Bahia 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/bahia.jpg",
+    "id": 7,
+    "estoque": true
+  },
+  {
+    "nome": "Atlético Mineiro | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/atleticominerio25.webp",
+    "estoque": false,
+    "id": 8
+  },
+  {
+    "nome": "Grêmio 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/gremio25.webp",
+    "estoque": false,
+    "id": 9
+  },
+  {
+    "nome": "Internacional 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "imagens/internacional25.webp",
+    "estoque": false,
+    "id": 10
+  },
+  {
+    "nome": "Real Madrid 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/real.jpg",
+    "id": 11,
+    "estoque": true
+  },
+  {
+    "nome": "Barcelona 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/barcelona.jpg",
+    "id": 12,
+    "estoque": true
+  },
+  {
+    "nome": "Manchester City 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/mancity25.webp",
+    "estoque": false,
+    "id": 13
+  },
+  {
+    "nome": "Manchester United 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/manunited25.webp",
+    "estoque": false,
+    "id": 14
+  },
+  {
+    "nome": "Liverpool 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/liverpool25.webp",
+    "estoque": false,
+    "id": 15
+  },
+  {
+    "nome": "Ajax 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/ajax.jpg",
+    "id": 16,
+    "estoque": true
+  },
+  {
+    "nome": "Arsenal 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/arsenal26.webp",
+    "estoque": false,
+    "id": 17
+  },
+  {
+    "nome": "Bayern 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/bayern26.webp",
+    "estoque": false,
+    "id": 18
+  },
+  {
+    "nome": "Borussia Dortmund 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/bvb26.webp",
+    "estoque": false,
+    "id": 19
+  },
+  {
+    "nome": "PSG 18 Neymar",
+    "preco": 180,
+    "categoria": "Internacional",
+    "imagem": "imagens/psg18.webp",
+    "estoque": false,
+    "id": 20
+  },
+  {
+    "nome": "Juventus 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/jv26.webp",
+    "estoque": false,
+    "id": 21
+  },
+  {
+    "nome": "Milan 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/milan26.webp",
+    "estoque": false,
+    "id": 22
+  },
+  {
+    "nome": "Inter de Milão 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Internacional",
+    "imagem": "imagens/milao26.webp",
+    "estoque": false,
+    "id": 23
+  },
+  {
+    "nome": "Brasil 1998 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/Brasil98.jpg",
+    "id": 24,
+    "estoque": true
+  },
+  {
+    "nome": "Brasil 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/brasil.jpg",
+    "id": 25,
+    "estoque": true
+  },
+  {
+    "nome": "Argentina 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/argentina26.webp",
+    "estoque": false,
+    "id": 26
+  },
+  {
+    "nome": "Portugal 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/portugal26.webp",
+    "estoque": false,
+    "id": 27
+  },
+  {
+    "nome": "Alemanha 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/alemanha26.webp",
+    "estoque": false,
+    "id": 28
+  },
+  {
+    "nome": "Espanha 25/26 | Versão Jogador",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/espanha26.webp",
+    "estoque": false,
+    "id": 29
+  },
+  {
+    "nome": "França 2 25/26 | Versão Torcedor",
+    "preco": 140,
+    "categoria": "Seleção",
+    "imagem": "imagens/frança2.jpg",
+    "estoque": false,
+    "id": 30
+  }
+]
