@@ -1,4 +1,3 @@
-// Modal de checkout: pede o CEP, calcula o frete e manda pro WhatsApp
 
 function criarModalCheckout(){
 
@@ -65,7 +64,6 @@ function fecharModalCheckout(){
 
 const NUMERO_WHATSAPP = "5573988625840";
 
-// Função única de compra (usada por script.js e produtos.js)
 function comprar(nomeCamisa, preco){
 
     criarModalCheckout();

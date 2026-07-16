@@ -1,17 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Backend simples para a loja Futzone.
-
-Serve o catálogo de produtos (camisas) por uma API REST e permite
-registrar pedidos/interesses de clientes em um banco SQLite local.
-
-Como rodar:
-    pip install -r requirements.txt
-    python app.py
-
-O servidor sobe em http://localhost:5000
-"""
-
 import json
 import os
 import sqlite3
@@ -33,7 +19,7 @@ DB_PATH = os.path.join(BASE_DIR, "futzone.db")
 app = Flask(__name__)
 
 if TEM_CORS:
-    CORS(app)  # permite que o front-end (HTML/JS) acesse a API de outra origem
+    CORS(app)  
 else:
     @app.after_request
     def add_cors_headers(response):
@@ -42,11 +28,6 @@ else:
         response.headers["Access-Control-Allow-Headers"] = "Content-Type"
         response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
         return response
-
-
-# ---------------------------------------------------------------------------
-# Banco de dados (SQLite) - guarda os pedidos/interesses dos clientes
-# ---------------------------------------------------------------------------
 
 def get_db():
     if "db" not in g:
@@ -80,10 +61,6 @@ def init_db():
     conn.close()
 
 
-# ---------------------------------------------------------------------------
-# Produtos - carregados do produtos.json (gerado a partir do dados.js atual)
-# ---------------------------------------------------------------------------
-
 def carregar_produtos():
     with open(PRODUTOS_JSON, encoding="utf-8") as f:
         return json.load(f)
@@ -100,15 +77,7 @@ def salvar_produtos(produtos):
 
 @app.get("/api/produtos")
 def listar_produtos():
-    """
-    Lista os produtos, com suporte a filtros via query string:
-
-    /api/produtos?busca=flamengo
-    /api/produtos?categoria=Nacional
-    /api/produtos?estoque=true
-    /api/produtos?preco_min=100&preco_max=150
-    /api/produtos?ordenar=preco_asc   (ou preco_desc)
-    """
+   
     produtos = carregar_produtos()
 
     busca = request.args.get("busca", "").strip().lower()
@@ -160,7 +129,7 @@ def listar_categorias():
 
 @app.post("/api/produtos")
 def criar_produto():
-    """Cadastra um novo produto (uso administrativo simples)."""
+   
     dados = request.get_json(silent=True) or {}
 
     campos_obrigatorios = ["nome", "preco", "categoria", "imagem"]
@@ -188,7 +157,7 @@ def criar_produto():
 
 @app.put("/api/produtos/<int:produto_id>")
 def atualizar_produto(produto_id):
-    """Atualiza campos de um produto existente (ex.: marcar como esgotado)."""
+    
     dados = request.get_json(silent=True) or {}
     produtos = carregar_produtos()
 
@@ -216,22 +185,10 @@ def remover_produto(produto_id):
     return jsonify({"mensagem": "Produto removido com sucesso"})
 
 
-# ---------------------------------------------------------------------------
-# Rotas - Pedidos / Interesses de clientes
-# ---------------------------------------------------------------------------
 
 @app.post("/api/pedidos")
 def criar_pedido():
-    """
-    Registra o interesse de um cliente em uma camisa.
-    Corpo esperado (JSON):
-    {
-        "produto_id": 1,
-        "produto_nome": "Flamengo 25/26 | Versão Jogador",
-        "cliente_nome": "João",
-        "cliente_telefone": "73999999999"
-    }
-    """
+    
     dados = request.get_json(silent=True) or {}
 
     produto_nome = dados.get("produto_nome")
@@ -265,9 +222,6 @@ def listar_pedidos():
     return jsonify([dict(row) for row in linhas])
 
 
-# ---------------------------------------------------------------------------
-# Frete - valor fixo por região, calculado a partir do CEP (via ViaCEP)
-# ---------------------------------------------------------------------------
 
 REGIAO_POR_UF = {
     "AC": "Norte", "AP": "Norte", "AM": "Norte", "PA": "Norte",
@@ -292,11 +246,8 @@ VALOR_FRETE_POR_REGIAO = {
 
 @app.get("/api/calcular-frete")
 def calcular_frete():
-    """
-    Calcula o frete a partir de um CEP (usa a API pública ViaCEP para
-    descobrir o estado, e uma tabela fixa de valor por região).
-    Uso: /api/calcular-frete?cep=45600000
-    """
+  
+    
     cep = request.args.get("cep", "").strip().replace("-", "")
 
     if not cep.isdigit() or len(cep) != 8:
@@ -325,9 +276,7 @@ def calcular_frete():
     })
 
 
-# ---------------------------------------------------------------------------
-# Rota inicial simples, só para checar se a API está no ar
-# ---------------------------------------------------------------------------
+
 
 @app.get("/")
 def home():
@@ -345,10 +294,6 @@ def home():
         ],
     })
 
-
-# Garante que a tabela exista tanto rodando localmente (python app.py)
-# quanto em produção via gunicorn (Render chama "app:app" diretamente,
-# sem passar pelo bloco abaixo).
 init_db()
 
 if __name__ == "__main__":
