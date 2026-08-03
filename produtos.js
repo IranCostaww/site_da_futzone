@@ -20,7 +20,14 @@ function mostrarProdutos(lista){
                     <img src="${produto.imagem}" alt="${produto.nome}">
                 </div>
                 <h4>${produto.nome}</h4>
-                <p>R$ ${produto.preco.toFixed(2).replace(".",",")}</p>
+                ${
+                    produto.precoOriginal
+                    ? `<div class="preco-wrapper">
+                        <span class="preco-original">R$ ${produto.precoOriginal.toFixed(2).replace(".",",")}</span>
+                        <span class="preco-desconto">R$ ${produto.preco.toFixed(2).replace(".",",")}</span>
+                       </div>`
+                    : `<p class="preco-normal">R$ ${produto.preco.toFixed(2).replace(".",",")}</p>`
+                }
                 ${
                     produto.estoque !== false
                     ? `<button onclick="comprar('${produto.nome}', ${produto.preco})">Comprar</button>`

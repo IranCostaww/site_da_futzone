@@ -1,6 +1,6 @@
 [
   {
-    "nome": "Flamengo 25/26  | Versão Jogador",
+    "nome": "Camisa Flamengo 25/26 - Jogador",
     "preco": 180,
     "categoria": "Nacional",
     "imagem": "imagens/flamengo26_jogador.jpg",
@@ -8,7 +8,7 @@
     "estoque": true
   },
   {
-    "nome": "Flamengo 25/26  | Versão Torcedor",
+    "nome": "Camisa Flamengo 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/flamengo26_torcedor.webp",
@@ -16,15 +16,16 @@
     "estoque": true
   },
   {
-    "nome": "Corinthians 25/26 | Versão Torcedor",
-    "preco": 140,
+    "nome": "Camisa Corinthians 25/26 - Torcedor",
+    "preco": 99,
+    "precoOriginal": 140,
     "categoria": "Nacional",
     "imagem": "imagens/corinthias.jpg",
     "id": 3,
-    "estoque":true
+    "estoque": true
   },
   {
-    "nome": "Palmeiras 26/27 | Versão Torcedor",
+    "nome": "Camisa Palmeiras 26/27 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/palmeiras26.jpg",
@@ -32,7 +33,7 @@
     "estoque": true
   },
   {
-    "nome": "São Paulo 25/26 | Versão Jogador",
+    "nome": "Camisa São Paulo 25/26 - Jogador",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/sp25.webp",
@@ -40,7 +41,7 @@
     "id": 5
   },
   {
-    "nome": "Vasco 25/26 | Versão Torcedor",
+    "nome": "Camisa Vasco da Gama 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/vasco26.jpg",
@@ -48,7 +49,7 @@
     "estoque": true
   },
   {
-    "nome": "Bahia 25/26 | Versão Torcedor",
+    "nome": "Camisa Bahia 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/bahia.jpg",
@@ -56,7 +57,7 @@
     "estoque": true
   },
   {
-    "nome": "Atlético Mineiro | Versão Torcedor",
+    "nome": "Camisa Atlético Mineiro 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/atleticominerio25.webp",
@@ -64,7 +65,7 @@
     "id": 8
   },
   {
-    "nome": "Grêmio 25/26 | Versão Torcedor",
+    "nome": "Camisa Grêmio 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/gremio25.webp",
@@ -72,7 +73,7 @@
     "id": 9
   },
   {
-    "nome": "Internacional 25/26 | Versão Torcedor",
+    "nome": "Camisa Internacional 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
     "imagem": "imagens/internacional25.webp",
@@ -80,15 +81,16 @@
     "id": 10
   },
   {
-    "nome": "Real Madrid 25/26 | Versão Torcedor",
-    "preco": 140,
+    "nome": "Camisa Real Madrid 25/26 - Torcedor",
+    "preco": 99,
+    "precoOriginal": 140,
     "categoria": "Internacional",
     "imagem": "imagens/real.jpg",
     "id": 11,
     "estoque": true
   },
   {
-    "nome": "Barcelona 25/26 | Versão Torcedor",
+    "nome": "Camisa Barcelona 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/barcelona.jpg",
@@ -96,7 +98,7 @@
     "estoque": true
   },
   {
-    "nome": "Manchester City 25/26 | Versão Torcedor",
+    "nome": "Camisa Manchester City 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/mancity25.webp",
@@ -104,7 +106,7 @@
     "id": 13
   },
   {
-    "nome": "Manchester United 25/26 | Versão Torcedor",
+    "nome": "Camisa Manchester United 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/manunited25.webp",
@@ -112,7 +114,7 @@
     "id": 14
   },
   {
-    "nome": "Liverpool 25/26 | Versão Torcedor",
+    "nome": "Camisa Liverpool 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/liverpool25.webp",
@@ -120,7 +122,7 @@
     "id": 15
   },
   {
-    "nome": "Ajax 25/26 | Versão Torcedor",
+    "nome": "Camisa Ajax 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/ajax.jpg",
@@ -128,7 +130,7 @@
     "estoque": true
   },
   {
-    "nome": "Arsenal 25/26 | Versão Torcedor",
+    "nome": "Camisa Arsenal 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/arsenal26.webp",
@@ -136,7 +138,7 @@
     "id": 17
   },
   {
-    "nome": "Bayern 25/26 | Versão Torcedor",
+    "nome": "Camisa Bayern de Munique 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/bayern26.webp",
@@ -144,7 +146,7 @@
     "id": 18
   },
   {
-    "nome": "Borussia Dortmund 25/26 | Versão Torcedor",
+    "nome": "Camisa Borussia Dortmund 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/bvb26.webp",
@@ -152,7 +154,7 @@
     "id": 19
   },
   {
-    "nome": "PSG 18 Neymar",
+    "nome": "Camisa PSG Retrô - Edição Neymar Jr.",
     "preco": 180,
     "categoria": "Internacional",
     "imagem": "imagens/psg18.webp",
@@ -160,7 +162,7 @@
     "id": 20
   },
   {
-    "nome": "Juventus 25/26 | Versão Torcedor",
+    "nome": "Camisa Juventus 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/jv26.webp",
@@ -168,7 +170,7 @@
     "id": 21
   },
   {
-    "nome": "Milan 25/26 | Versão Torcedor",
+    "nome": "Camisa Milan 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/milan26.webp",
@@ -176,7 +178,7 @@
     "id": 22
   },
   {
-    "nome": "Inter de Milão 25/26 | Versão Torcedor",
+    "nome": "Camisa Inter de Milão 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Internacional",
     "imagem": "imagens/milao26.webp",
@@ -184,15 +186,15 @@
     "id": 23
   },
   {
-    "nome": "Brasil 1998 | Versão Torcedor",
-    "preco": 180,
+    "nome": "Camisa Seleção Brasileira 1998 - Retrô",
+    "preco": 120,
     "categoria": "Seleção",
     "imagem": "imagens/Brasil98.jpg",
     "id": 24,
     "estoque": true
   },
   {
-    "nome": "Brasil 25/26 | Versão Torcedor",
+    "nome": "Camisa Seleção Brasileira 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/brasil.jpg",
@@ -200,7 +202,7 @@
     "estoque": true
   },
   {
-    "nome": "Argentina 25/26 | Versão Torcedor",
+    "nome": "Camisa Seleção Argentina 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/argentina26.webp",
@@ -208,7 +210,7 @@
     "id": 26
   },
   {
-    "nome": "Portugal 25/26 | Versão Torcedor",
+    "nome": "Camisa Seleção Portugal 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/portugal26.webp",
@@ -216,7 +218,7 @@
     "id": 27
   },
   {
-    "nome": "Alemanha 25/26 | Versão Torcedor",
+    "nome": "Camisa Seleção Alemanha 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/alemanha26.webp",
@@ -224,7 +226,7 @@
     "id": 28
   },
   {
-    "nome": "Espanha 25/26 | Versão Jogador",
+    "nome": "Camisa Seleção Espanha 25/26 - Jogador",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/espanha26.webp",
@@ -232,11 +234,51 @@
     "id": 29
   },
   {
-    "nome": "França 2 25/26 | Versão Torcedor",
+    "nome": "Camisa Seleção França 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Seleção",
     "imagem": "imagens/fran#UOOe7a2.jpg",
     "estoque": false,
     "id": 30
+  },
+  {
+    "nome": "Camisa Bahia II 25/26 - Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "bahia2.jpeg",
+    "id": 31,
+    "estoque": true
+  },
+  {
+    "nome": "Camisa São Paulo 25/26 - Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "SaoPaulo.jpeg",
+    "id": 32,
+    "estoque": true
+  },
+  {
+    "nome": "Camisa Bahia II Branca 25/26 - Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "bahia2branca.jpeg",
+    "id": 33,
+    "estoque": true
+  },
+  {
+    "nome": "Camisa Corinthians II Branca 25/26 - Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "corinthias2.jpeg",
+    "id": 34,
+    "estoque": true
+  },
+  {
+    "nome": "Camisa Flamengo II Branca 25/26 - Torcedor",
+    "preco": 140,
+    "categoria": "Nacional",
+    "imagem": "corinthias2.jpeg",
+    "id": 36,
+    "estoque": true
   }
 ]
