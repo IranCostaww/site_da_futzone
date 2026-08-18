@@ -1,6 +1,6 @@
 [
   {
-    "nome": "Camisa Flamengo 25/26 - Jogador",
+    "nome": "Camisa Flamengo 26/27 - Jogador",
     "preco": 180,
     "categoria": "Nacional",
     "imagem": "imagens/flamengo26_jogador.jpg",
@@ -245,7 +245,7 @@
     "nome": "Camisa Bahia II 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "imagens/bahia2.jpeg",
+    "imagem": "imagens/ba26.webp",
     "id": 31,
     "estoque": true
   },
@@ -253,7 +253,7 @@
     "nome": "Camisa São Paulo 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "imagens/SaoPaulo.jpeg",
+    "imagem": "imagens/sp26.webp",
     "id": 32,
     "estoque": true
   },
@@ -319,14 +319,6 @@
     "categoria": "Internacional",
     "imagem": "imagens/manronaldo08.jpeg",
     "id": 40,
-    "estoque": true
-  },
-  {
-    "nome": "Camisa Corinthians II Branca 25/26 - Torcedor",
-    "preco": 140,
-    "categoria": "Nacional",
-    "imagem": "imagens/corinthias2.jpeg",
-    "id": 41,
     "estoque": true
   },
   {
