@@ -245,7 +245,7 @@
     "nome": "Camisa Bahia II 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "bahia2.jpeg",
+    "imagem": "imagens/bahia2.jpeg",
     "id": 31,
     "estoque": true
   },
@@ -253,7 +253,7 @@
     "nome": "Camisa São Paulo 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "SaoPaulo.jpeg",
+    "imagem": "imagens/SaoPaulo.jpeg",
     "id": 32,
     "estoque": true
   },
@@ -261,7 +261,7 @@
     "nome": "Camisa Bahia II Branca 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "bahia2branca.jpeg",
+    "imagem": "imagens/bahia2branca.jpeg",
     "id": 33,
     "estoque": true
   },
@@ -269,23 +269,23 @@
     "nome": "Camisa Bahia II 26/27",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "bahia27fora.jpeg",
+    "imagem": "imagens/bahia27fora.jpeg",
     "id": 34,
     "estoque": true
   },
   {
-    "nome": "Camisa Flamengo 26/27 Fora ",
+    "nome": "Camisa Flamengo 26/27 Fora",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "flamengo27fora.jpeg",
+    "imagem": "imagens/flamengo27fora.jpeg",
     "id": 35,
     "estoque": true
   },
   {
-    "nome": "Camisa São Paulo 25/26 Third ",
+    "nome": "Camisa São Paulo 25/26 Third",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "sp26third.jpeg",
+    "imagem": "imagens/sp26third.jpeg",
     "id": 36,
     "estoque": true
   },
@@ -293,7 +293,7 @@
     "nome": "Camisa Corinthians 26/27 Fora",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "corinthias3.jpeg",
+    "imagem": "imagens/corinthias3.jpeg",
     "id": 37,
     "estoque": true
   },
@@ -301,7 +301,7 @@
     "nome": "Barcelona Retrô 2015 Messi 10",
     "preco": 220,
     "categoria": "Internacional",
-    "imagem": "Messi2015.jpeg",
+    "imagem": "imagens/Messi2015.jpeg",
     "id": 38,
     "estoque": true
   },
@@ -309,7 +309,7 @@
     "nome": "Barcelona Retrô 2015 Neymar Jr 11",
     "preco": 220,
     "categoria": "Internacional",
-    "imagem": "ney2015.jpeg",
+    "imagem": "imagens/ney2015.jpeg",
     "id": 39,
     "estoque": true
   },
@@ -317,7 +317,7 @@
     "nome": "Man United Retrô 2008 Ronaldo 7/ Patch Champions",
     "preco": 240,
     "categoria": "Internacional",
-    "imagem": "manronaldo08.jpeg",
+    "imagem": "imagens/manronaldo08.jpeg",
     "id": 40,
     "estoque": true
   },
@@ -325,7 +325,7 @@
     "nome": "Camisa Corinthians II Branca 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "corinthias2.jpeg",
+    "imagem": "imagens/corinthias2.jpeg",
     "id": 41,
     "estoque": true
   },
@@ -333,7 +333,7 @@
     "nome": "Camisa Flamengo II Branca 25/26 - Torcedor",
     "preco": 140,
     "categoria": "Nacional",
-    "imagem": "flamengo2.jpeg",
+    "imagem": "imagens/flamengo2.jpeg",
     "id": 42,
     "estoque": true
   }
